@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch IT Operations Runbook / SOP Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <nav>
+        <img src="pic3.jpg" alt="Mervin Tabios">
+        <h1>Branch IT Operations Runbook / SOP Template</h1>
+    </nav>
+<body>
+    
+    <div class="buttons">
+        <br> <br> <h1>Network and Connectivity Runbook</h1>
+    <button id="basic">Basic Informations</button>
+    <button id="purpose">Purpose</button>
+    <button id="when">When to use this runbook?</button>
+    <button id="pre">Prerequisites</button>
+    <button id="step">Step-by-Step Procedure</button>
+    <button id="escalation">Escalation Criteria</button>
+    <button id="communication">Communication Guidelines</button>
+    <button id="valid">Validation / Closure</button>
+    <button id="docu">Documentation Requirements</button> <br> 
+
+    <div class="footer">
+        <p>Reported by: Mervin N. Tabios</p>
+    </div>
+    </div>
+
+    <div class="modal-container"
+    id="modal_container">
+        <div class="modal">
+            <h1>Basic Informations</h1>
+            
+            <table border="1">
+            <tr>
+                <th>Field</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Runbook Tittle</td>
+                <td>Network and Connectivity Support</td>
+            </tr>
+            <tr>
+                <td>Process Category</td>
+                <td>Incident Management / Preventive Maintenance / Escalation</td>
+            </tr>
+            <tr>
+                <td>System/Service</td>
+                <td>Network, Store Server, Printer</td>
+            </tr>
+            <tr>
+                <td>Owner</td>
+                <td>Responsible role (Cluster Head)</td>
+            </tr>
+            <tr>
+                <td>Version</td>
+                <td>Document version</td>
+            </tr>
+            <tr>
+                <td>Last Update</td>
+                <td>April 02, 2026</td>
+            </tr>
+            </table>
+                <button id="close">Home</button>   
+        </div>
+    </div>
+    <div class="modal-container1"
+    id="modal_container1">
+        <div class="modal1">
+            <h1>Purpose</h1>
+            <p>To provide a standardized process for diagnosing, escalating, and resolving network and connectivity issues across infrastructure, ensuring minimal downtime and clear communication with stakeholders.</p>
+            <button id="close1">Home</button>
+        </div>
+    </div>
+
+    <div class="modal-container2"
+    id="modal_container2">
+        <div class="modal2">
+            <h1>When to Use This Runbook?</h1>
+            <p>A. User-Reported Issues <br>
+                •	Stakeholder cannot connect to the internet, Wi-Fi, or VPN such as PDTs, RM’s laptop, HR Kiosks, SM CIS Kiosks and CTD mobile phones <br>
+                •	BDO Remittance, CTD web applications, MSPG, POS and EFT terminals fail to process transactions due to connectivity errors. <br>
+                •	Stakeholders report unstable network connections. <br> <br>
+
+                B. Monitoring Alerts <br>
+                •	Network monitoring tools detect outages, packet loss, or unusual latency. <br>
+                •	Bandwidth utilization spikes beyond thresholds, affecting business-critical applications. <br> <br>
+
+                C. Site-Wide or Multi-Department Impact <br>
+                •	Entire store, office, or branch loses connectivity. <br>
+                •	Multiple departments report simultaneous network issues. <br>
+                •	Business-critical services (All MSPG terminals application, all CTD Web applications, BDO remittance, emails) are inaccessible. <br> <br>
+
+                D. Hardware or ISP Failures <br>
+                •	Suspected router, switch, or access point malfunction. <br>
+                •	ISP outage confirmed or suspected. <br>
+                •	Hardware replacement or vendor intervention required. <br> <br>
+
+                E. Escalation Scenarios <br>
+                •	First-line troubleshooting exceeds 30 minutes without resolution. <br>
+                •	Issue impacts revenue, compliance, or customer experience. <br>
+                •	Root cause of the incident.
+            </p>
+            <button id="close2">Home</button>
+        </div>
+    </div>
+
+    <div class="modal-container3"
+    id="modal_container3">
+        <div class="modal3">
+            <h1>Prerequisites</h1>
+            <p>* Documentation (reference ticket number) and communication channels in place <br>
+                * Access to systems <br>
+                * Monitoring visibility <br>
+                * Escalation contacts ready <br>
+            </p>
+            <button id="close3">Home</button>
+        </div>
+    </div>
+
+
+    <div class="modal-container4"
+    id="modal_container4">
+        <div class="modal4">
+            <h1>Step-by-Step Procedure</h1>
+            <p>A. Detection & Logging <br>
+                •	Receive issue report from end-user, helpdesk, or monitoring alert.<br>
+                •	Record incident details in the ticketing system (time, user, symptoms, affected services).<br>
+                •	Confirm if the issue is isolated (single device) or widespread (multiple users/branch).<br><br>
+
+                B. Basic Checks<br>
+                •	✅ Verify physical connections: cables, switch ports, Wi-Fi access points.<br>
+                •	✅ Check device network settings: IP address, DNS, DHCP status.<br>
+                •	✅ Restart affected device (PC, POS terminal, router/AP if permitted).<br>
+                •	✅ Ping default gateway and DNS server to confirm local connectivity.<br><br>
+
+                C. Quick Troubleshooting<br>
+                •	Test connectivity to internal systems (intranet sites).<br>
+                •	Test external connectivity (internet sites).<br>
+                •	Check if issue is user-specific (credentials, device settings) or network-wide.<br>
+                •	Document all steps taken in the incident log.<br><br>
+
+                D. Communication<br>
+                •	Inform branch manager or designated contact about the issue.<br>
+                •	Provide updates every 30–60 minutes until resolution or escalation.<br>
+                •	Share incident ticket reference number for tracking.<br><br>
+
+                E. Resolution & Closure<br>
+                •	If resolved at branch level:<br>
+                o	Confirm with affected users that services are restored.<br>
+                o	Document resolution steps in the ticket.<br>
+                •	If escalated:<br>
+                o	Hand over incident details, troubleshooting steps, and logs to Network Group.<br>
+                o	Close ticket at branch level once higher support confirms resolution.<br><br>
+
+
+                F. Preventive Follow-Up<br>
+                •	Note recurring issues for pattern analysis.<br>
+                •	Ensure branch devices (routers, switches, APs) have updated firmware.
+            </p>
+            <button id="close4">Home</button>
+        </div>
+    </div>
+
+    <div class="modal-container5"
+    id="modal_container5">
+        <div class="modal5">
+            <h1>Escalation Criteria</h1>
+             <table border="1">
+            <tr>
+                <th>Condition</th>
+                <th>Escalation Level</th>
+            </tr>
+            <tr>
+                <td>TELCO Issue</td>
+                <td>CFO</td>
+            </tr>
+            <tr>
+                <td>Network configuration issue</td>
+                <td>Network Team</td>
+            </tr>
+            <tr>
+                <td>Network hardware issue</td>
+                <td>Infrastructure Team</td>
+            </tr>
+            </table>
+            <button id="close5">Home</button>
+        </div>
+    </div>
+
+
+    <div class="modal-container6"
+    id="modal_container6">
+        <div class="modal6">
+            <h1>Communication Guidelines</h1>
+            <p>A. Tone & Style <br>
+                •	✅ Be professional, polite, and concise.<br>
+                •	✅ Use clear, non-technical language when speaking to non-IT staff.<br>
+                •	✅ Avoid jargon unless communicating with technical teams.<br>
+                •	✅ Stay calm and reassuring, especially during outages.<br><br>
+
+                B. Information to Include in Updates<br>
+                Every communication should cover:<br>
+                •	Incident Reference Number (ticket ID).<br>
+                •	Issue Summary: What is affected (POS, MSPG, EFT, Wi-Fi, VPN, etc.).<br>
+                •	Scope: Single user, department, or branch-wide.<br>
+                •	Actions Taken: Steps already performed at branch level.<br>
+                •	Next Steps: Escalation or pending resolution.<br>
+                •	ETA/Update Frequency: When stakeholders can expect the next update.<br><br>
+
+                C. Communication Channels<br>
+                •	Internal Users (Branch Staff/Managers):<br>
+                o	Use email, chat, or phone for quick updates.<br>
+                o	Keep explanations simple and focused on impact.<br>
+                •	Network Group / 2nd Level Support:<br>
+                o	Use incident ticketing system or escalation email.<br>
+                o	Provide detailed technical logs and troubleshooting steps.<br>
+                •	Vendors/ISPs:<br>
+                o	Contact via official support channels.<br>
+                o	Share precise error details, device IDs, and timestamps.<br><br>
+
+                D. Timing & Frequency<br>
+                •	Initial Notification: Immediately after confirming an incident.<br>
+                •	Regular Updates: Every 30–60 minutes until resolution or escalation.<br>
+                •	Closure Notice: Once issue is resolved or handed over to higher support.<br><br>
+
+                E. Escalation Communication Template<br>
+                Subject: [Branch] Network Connectivity Issue – Escalation Required Body:<br>
+                •	Incident ID: [Ticket Number]<br>
+                •	Branch: [Location]<br>
+                •	Issue: [Summary of problem]<br>
+                •	Scope: [Number of users/systems affected]<br>
+                •	Steps Taken: [List of troubleshooting actions performed]<br>
+                •	Request: Escalation to Network Group for advanced support<br>
+                •	Contact: [Branch IT name & phone/email]<br><br>
+
+                F. Do’s & Don’ts<br>
+                •	✅ Do acknowledge user concerns promptly.<br>
+                •	✅ Do document all communications in the incident log.<br>
+                •	❌ Don’t speculate on causes without evidence.<br>
+                •	❌ Don’t promise resolution times unless confirmed by higher support.<br>
+                •	❌ Don’t use informal or emotional language in official updates.
+            </p>
+            <button id="close6">Home</button>
+        </div>
+    </div>
+
+
+    <div class="modal-container7"
+    id="modal_container7">
+        <div class="modal7">
+            <h1>Validation / Closure</h1>
+            <p>A. Validation Before Closure <br>
+                •	Confirm Service Restoration<br>
+                o	Test connectivity (ex. internet browsing, VPN access, POS/MSPG/EFT transaction, web applications).<br>
+                o	Verify affected devices are back online (PCs, POS terminals, APs).<br>
+                o	Ensure branch staff confirm that their operations are functioning normally.<br><br>
+
+                •	Confirm Scope<br>
+                o	Ensure the issue is resolved for all affected users, not just one device.<br>
+                o	Confirm no residual impact on other services.<br><br>
+
+                B. Documentation<br>
+                •	Record the following in the incident ticket:<br>
+                o	Timeline of events (detection, troubleshooting, escalation, resolution).<br>
+                o	Actions taken by branch IT and higher-level teams.<br>
+                o	Root cause (if identified).<br>
+                o	Preventive measures or recommendations.<br><br>
+                C. Communication<br>
+                •	Send closure notification to branch manager and stakeholders:<br>
+                o	Incident ID and summary.<br>
+                o	Confirmation that services are restored.<br>
+                o	Root cause (if known) and resolution steps.<br>
+                o	Preventive actions (e.g., firmware update, ISP failover test).<br><br>
+
+                •	Update Network Group / 2nd Level Support:<br>
+                o	Provide final status and confirm no further action required.<br>
+                o	Share logs or monitoring screenshots if requested.<br><br>
+
+                D. Closure Criteria<br>
+                Branch IT can close the incident when:<br>
+                •	✅ All affected services are validated as operational.<br>
+                •	✅ Stakeholders confirm normal operations.<br>
+                •	✅ Documentation is complete in the ticketing system.<br>
+                •	✅ Escalation teams (if involved) confirm resolution.<br><br>
+
+                E. Post-Closure Follow-Up<br>
+                •	Note recurring issues for pattern analysis.<br>
+                •	Update branch IT knowledge base with lessons learned.<br>
+                •	Schedule preventive checks.
+            </p>
+            <button id="close7">Home</button>
+        </div>
+    </div>
+
+
+    <div class="modal-container8"
+    id="modal_container8">
+        <div class="modal8">
+            <h1>Documentation Requirements</h1>
+            <p>A. Incident Identification <br>
+                •	Incident ID / Ticket Number (from helpdesk system).<br>
+                •	Date & Time of detection and reporting.<br>
+                •	Branch Location and affected department(s).<br>
+                •	Reporter Details (user name, contact, role).<br><br>
+
+                B. Issue Description<br>
+                •	Symptoms: What users experienced (e.g., “POS terminals offline status”).<br>
+                •	Scope: Single device, multiple users, or branch-wide.<br>
+                •	Affected Services: Internet, VPN, MSPG, POS, email, etc.<br>
+                •	Initial Impact Assessment: Business disruption, revenue impact, or operational delay.<br><br>
+
+                C. Troubleshooting Actions<br>
+                •	Basic Checks Performed: cables, IP/DNS, gateway ping, device restart.<br>
+                •	Intermediate Steps: traceroute, firewall/VPN validation, router/switch log review (c/o NOC)<br>
+                •	Results of Each Step: success/failure, observations.<br>
+                •	Time Spent: duration of troubleshooting before escalation.<br><br>
+                D. Escalation Details<br>
+                •	Escalation Trigger: reason for escalation (e.g., unresolved after 30 minutes, critical service outage).<br>
+                •	Escalation Contact: Network Group, CFO, L2<br>
+                •	Information Shared: logs, screenshots, error messages, troubleshooting summary.<br><br>
+
+                E. Communication Log<br>
+                •	Notifications Sent: branch manager, stakeholders, higher support.<br>
+                •	Update Frequency: timestamps of each communication.<br>
+                •	Closure Confirmation: acknowledgment from stakeholders that services are restored.<br><br>
+
+                F. Resolution & Validation<br>
+                •	Resolution Method: config change, hardware replacement, ISP restoration.<br>
+                •	Validation Tests: POS transaction, VPN access, internet browsing.<br>
+                •	User Confirmation: feedback from affected staff confirming normal operations.<br><br>
+
+                G. Closure Notes<br>
+                •	Root Cause (if identified): hardware fault, ISP outage, misconfiguration.<br>
+                •	Preventive Measures: firmware update, failover testing, monitoring adjustment.<br>
+                •	Knowledge Base Update: add new troubleshooting steps or lessons learned.
+
+            </p>
+            <button id="close8">Home</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
