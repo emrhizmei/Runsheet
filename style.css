@@ -198,11 +198,12 @@ button:hover{
     pointer-events: none;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: flex-end;
+    overflow-y: auto;
    
 }
 .modal-container3.show{
@@ -216,15 +217,17 @@ button:hover{
     gap: 10px;
     padding: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 91vh;
     width: 950px;
     max-width: 100%;
     border-radius: 5px;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    overflow-y: auto;
 }
 .modal3 > button{
-  width: max-content;
+width: max-content;
     padding: 2px;
     border-radius:2px;
     font-size: 10px;
